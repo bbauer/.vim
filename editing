@@ -21,7 +21,7 @@ let g:rubycomplete_classes_in_global = 1
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-set textwidth=80  " wrap at 80 characters
+set textwidth=20000  " wrap at 80 characters
 set nowrap        " Text wrapping should be done manually
 set softtabstop=2 " most of the time, we want a softtabstop of 2
 set tabstop=2     " show tabs with 2 spaces
@@ -85,3 +85,6 @@ set noeb vb t_vb=
 " ctags-related
 set tags+=../tags,../../tags,../../../tags,../../../../tags,tmp/tags
 map <silent> <Leader>r :!/usr/local/bin/ctags -f tags -R *<CR><CR>
+
+set textwidth=80
+set colorcolumn=+1

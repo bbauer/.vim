@@ -1,11 +1,12 @@
 "GUI OPTIONS
-colorscheme Tomorrow-Night
+colorscheme hot_color_scheme
 set mouse=a
-set guifont=Monaco\ for\ Powerline:h11
+" set guifont=Source Code Pro:h12
+set guifont=Inconsolata:h14
 
 " set default window size
-set columns=170
-set lines=48
+set columns=370
+set lines=108
 
 " GUI option string.  Values:
 "   c: don't pop up windows; use the console for dialog boxes and such
@@ -15,3 +16,4 @@ set guioptions=ce
 
 " Highlight the cursor line
 set cursorline
+let g:Powerline_symbols = 'unicode'
