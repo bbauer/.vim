@@ -27,3 +27,8 @@ nnoremap <Leader>sn ]s
 nnoremap <Leader>sp ]p
 nnoremap <Leader>sa zg
 nnoremap <Leader>s? z=
+
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }

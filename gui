@@ -1,5 +1,6 @@
 "GUI OPTIONS
 colorscheme hot_color_scheme
+set transparency=2
 set mouse=a
 " set guifont=Source Code Pro:h12
 set guifont=Inconsolata:h14

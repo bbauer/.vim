@@ -3,7 +3,6 @@ syntax on
 set number      " line numbers
 set showbreak=+ " display a + at the beginning of a wrapped line
 set showmatch   " flash the matching bracket on inserting a )]} etc
-
 set encoding=utf-8 nobomb
 
 " Remember more command history
@@ -11,7 +10,6 @@ set history=1000
 
 " Automatically read files that have changed on the FS but not in Vim.
 set autoread
-
 set completeopt=menuone,preview
 
 " omni completion settings
@@ -36,12 +34,8 @@ set list                     " show whitespace
 set listchars=tab:»·,trail:· " show tabs and trailing spaces
 set listchars+=extends:»     " show a » when a line goes off the right edge of the screen
 set listchars+=precedes:«    " show a « when a line goes off the left edge of the screen
-
-set scrolloff=5                       " minimum lines to show around cursor
 set sidescrolloff=5                   " min characters to show sideways
-
-set colorcolumn=+1 " Highlight the last column
-
+"set colorcolumn=+1 " Highlight the last column
 set formatoptions+=n1     " help fo-table
                             " defaults: tcq
                             " t: auto-wrap text using text-width
@@ -87,4 +81,9 @@ set tags+=../tags,../../tags,../../../tags,../../../../tags,tmp/tags
 map <silent> <Leader>r :!/usr/local/bin/ctags -f tags -R *<CR><CR>
 
 set textwidth=80
-set colorcolumn=+1
+"set colorcolumn=+1
+set colorcolumn=90
+let g:ConqueTerm_Color = 1
+
+" Git commits.
+autocmd FileType gitcommit setlocal spell

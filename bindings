@@ -19,7 +19,9 @@ map <leader>[ :bprevious<CR>
 map <leader>] :bnext<CR>
 
 " shortcut to strip trailing whitespace
-map <leader>s :%s/\s\+$//g<CR>
+map <leader>w :%s/\s\+$//g<CR>
+map <leader>s :! bundle exec rspec %<CR>
+map <leader>b :bundle<CR>
 
 " Replicate textmate CMD-[ and CMD-] for indentation
 nmap <D-[> <<
@@ -47,3 +49,7 @@ nmap <leader>e :e **/
 
 noremap <C-Tab> :tabnext<CR>
 noremap <C-S-Tab> :tabprev<CR>
+map <S-Enter> O<Esc>
+map <CR> o<Esc>
+
+imap jj <Esc>
