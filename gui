@@ -1,9 +1,14 @@
 "GUI OPTIONS
 colorscheme hot_color_scheme
+"colorscheme github
+"colorscheme base16-default
+
 set transparency=2
 set mouse=a
 " set guifont=Source Code Pro:h12
-set guifont=Inconsolata:h14
+" set guifont=Inconsolata:h14
+set guifont=Hack:h12
+g:airline_powerline_fonts = 1
 
 " set default window size
 set columns=370
@@ -17,4 +22,4 @@ set guioptions=ce
 
 " Highlight the cursor line
 set cursorline
-let g:Powerline_symbols = 'unicode'
+"let g:Powerline_symbols = 'unicode'

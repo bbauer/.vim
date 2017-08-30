@@ -20,7 +20,6 @@ map <leader>] :bnext<CR>
 
 " shortcut to strip trailing whitespace
 map <leader>w :%s/\s\+$//g<CR>
-map <leader>s :! bundle exec rspec %<CR>
 map <leader>b :bundle<CR>
 
 " Replicate textmate CMD-[ and CMD-] for indentation
@@ -53,3 +52,8 @@ map <S-Enter> O<Esc>
 map <CR> o<Esc>
 
 imap jj <Esc>
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
